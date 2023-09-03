@@ -1,0 +1,793 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #8f95a5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 1340px;
+}
+
+.title {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: 90px;
+}
+
+.brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 54px;
+  color: #8f95a5 !important;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #263238 !important;
+}
+
+.brand:hover {
+  color: #263238 !important;
+}
+
+.brand:hover span {
+  color: #8f95a5 !important;
+}
+
+.btn:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.navbar {
+  padding-top: 55px;
+}
+
+.navbar .nav-item + .nav-item {
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+}
+
+.navbar .nav-link {
+  color: #263238 !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  -webkit-transition: all .9s;
+  transition: all .9s;
+}
+
+.navbar .nav-link:hover {
+  color: #8f95a5 !important;
+}
+
+.navbar .btn {
+  width: 220px;
+  height: 70px;
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  border: 2px solid #263238;
+  border-radius: 5px;
+}
+
+.navbar .btn:hover {
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.header__content {
+  margin-top: 115px;
+  margin-bottom: 150px;
+}
+
+.header__title {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: 40px;
+}
+
+.header__text {
+  color: #8f95a5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  margin-bottom: 60px;
+}
+
+.header__btn {
+  height: 118px;
+  width: 80%;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 54px;
+  margin-left: 12px;
+}
+
+.skills {
+  margin-bottom: 250px;
+}
+
+.skills__item {
+  margin: 0;
+  padding: 45px;
+  background-color: #F5F5F5;
+}
+
+.skills__subtitle {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.skills__text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.skills__btn {
+  width: 230px;
+  height: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.skills .img__special {
+  height: 180px;
+  width: auto;
+}
+
+.skills .item__special {
+  padding: 20px 45px !important;
+}
+
+.skills .item__left {
+  padding-bottom: 95px !important;
+}
+
+.about-us {
+  margin-bottom: 230px;
+}
+
+.about-us .text-400 {
+  font-weight: 400;
+}
+
+.about-us__number {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.pricing {
+  margin-bottom: 260px;
+}
+
+.pricing__img {
+  width: 80%;
+  height: 15vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.pricing__name {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.pricing__btn {
+  width: 240px;
+  background-color: #eee;
+  border: 0;
+  color: #546269;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+}
+
+.pricing__btn span {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 45px;
+}
+
+.pricing__btn:hover span {
+  color: #fff;
+}
+
+.pricing .card {
+  border: 0;
+}
+
+.pricing .card-body {
+  padding-bottom: 60px;
+}
+
+.contact {
+  margin-bottom: 130px;
+}
+
+.contact__email {
+  width: 60%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 25px 33px;
+  border: 1px solid #8f95a5;
+}
+
+.contact__email::-webkit-input-placeholder {
+  color: #8f95a5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.contact__email:-ms-input-placeholder {
+  color: #8f95a5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.contact__email::-ms-input-placeholder {
+  color: #8f95a5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.contact__email::placeholder {
+  color: #8f95a5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.contact__email:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid #8f95a5;
+}
+
+.contact__btn {
+  width: 36%;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer__line {
+  height: 1px;
+  width: 100%;
+  background-color: #8f95a5;
+}
+
+.footer__copyright {
+  color: #8f95a5;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #8f95a5;
+}
+
+.footer__link:hover {
+  color: #263238;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 50px;
+  }
+  .brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 45px;
+  }
+  .navbar .btn {
+    width: 160px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+  }
+  .navbar__link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .header__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+  }
+  .header__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+  .header__btn {
+    width: 60%;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+  }
+  .header__content {
+    margin-bottom: 70px;
+    margin-top: 90px;
+  }
+  .skills {
+    margin-bottom: 105px;
+  }
+  .skills__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+  .skills__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+  }
+  .skills__btn {
+    width: 196px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .skills .img__special {
+    height: 140px;
+    width: auto;
+  }
+  .about-us {
+    margin-bottom: 125px;
+  }
+  .about-us__number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .pricing {
+    margin-bottom: 140px;
+  }
+  .pricing__name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  .pricing__btn {
+    padding: 0 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .pricing__btn span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+  }
+  .contact {
+    margin-bottom: 150px;
+  }
+  .contact__email {
+    height: 60px;
+  }
+  .contact__btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .footer__copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+  }
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 35px;
+  }
+  .navbar .nav-item + .nav-item {
+    margin-left: 20px;
+  }
+  .navbar .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .header__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+  }
+  .header__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+  .header__btn {
+    width: 60%;
+    height: 65px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+  }
+  .skills__item {
+    padding: 25px;
+  }
+  .skills__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  .skills__btn {
+    width: 180px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .skills .item__left {
+    padding-bottom: 75px !important;
+  }
+  .about-us__number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  .pricing__name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .pricing__btn {
+    padding: 10px;
+    width: 210px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .pricing__btn span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+  }
+  .contact {
+    margin-bottom: 150px;
+  }
+  .contact__email {
+    height: 50px;
+  }
+  .contact__email::-webkit-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+  }
+  .contact__email:-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+  }
+  .contact__email::-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+  }
+  .contact__email::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+  }
+  .contact__btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .footer__copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body.show {
+    overflow: hidden;
+  }
+  .navbar-toggler {
+    border: 0 !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("../images/close.svg");
+  }
+  .navbar-toggler[aria-expanded="false"] .navbar-toggler-icon {
+    background-image: url("../images/menu.svg");
+  }
+  .navbar {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    padding-top: 20px !important;
+    background-color: #fff;
+  }
+  .navbar .collapse {
+    height: 90vh;
+  }
+  .navbar .collapse.show ~ body {
+    overflow: hidden;
+  }
+  .navbar-nav {
+    margin-top: 30px;
+  }
+  .navbar .nav-item {
+    margin: 0 0 15px !important;
+  }
+  .navbar .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .navbar .btn {
+    width: 50%;
+  }
+  .header {
+    position: relative;
+  }
+  .header__content {
+    padding-top: 50px;
+    margin-top: 0;
+  }
+  .skills .img__special {
+    width: 50%;
+    height: auto;
+  }
+  .skills__img {
+    width: 50%;
+    height: auto;
+  }
+  .skills .item__special {
+    padding: 25px !important;
+  }
+  .pricing__img {
+    width: 40%;
+    height: auto;
+  }
+  .pricing__btn {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  .brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+  }
+  .header__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  .header__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  .header__btn {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+  .skills__img {
+    width: 80% !important;
+  }
+  .skills__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .skills__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+  }
+  .skills__btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .about-us__number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .pricing__btn {
+    width: 170px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+  }
+  .pricing__btn span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+  }
+  .contact__img {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .contact__form {
+    display: block !important;
+  }
+  .contact__email {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact__btn {
+    display: block;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar .btn {
+    width: 80%;
+  }
+  .pricing__img {
+    width: 80%;
+  }
+  .pricing__name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .pricing__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  .about-us__data {
+    display: block;
+  }
+  .about-us__data div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer__link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,687 @@
+$color-st: rgba(38, 50, 56, 1);
+$color-text:rgba(143, 149, 165, 1); 
+$color-hover: #6c757d;
+
+@mixin text($size,$weight,$height){
+    font-family:'Poppins', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: $color-text;
+    @include text(20px, normal, 30px)
+}
+.container{
+    max-width: 1340px;
+}
+.title{
+    color: $color-st;
+    @include text(48px, 600, 80px);
+    margin-bottom: 90px;
+}
+
+.brand{
+    @include text(36px, normal, 54px);
+    color: $color-text !important;
+    text-decoration: none;
+
+    span{
+        color: $color-st !important;
+    }
+
+    &:hover{
+        color: $color-st !important;
+
+        span{
+            color: $color-text !important;
+        }
+    }
+}
+
+.btn:hover{
+    background-color: $color-hover;
+    border-color: $color-hover;
+}
+//navbar
+.navbar{
+    padding-top: 55px;
+
+    .nav-item+.nav-item{
+        padding: 0;
+        margin: 0;
+        margin-left: 40px;
+    }
+
+    .nav-link{
+        color: $color-st !important;
+        @include text(20px, 500, 30px);
+        transition: all .9s;
+
+        &:hover{
+           color: $color-text !important;
+        }
+    }
+
+    .btn{
+        width: 220px;
+        height: 70px;
+        color: $color-st;
+        @include text(24px, normal, 36px);
+        border: 2px solid $color-st;
+        border-radius: 5px;
+
+        &:hover{
+            border-color: $color-hover;
+            color: #fff;
+        }
+    }
+}
+
+//header
+
+.header{
+
+    &__content{
+        margin-top: 115px;
+        margin-bottom: 150px;
+    }
+
+    &__title{
+        color: $color-st;
+        @include text(64px, 600, 80px);
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        color: $color-text;
+        @include text(24px, normal, 36px);
+        margin-bottom: 60px;
+    }
+
+    &__btn{
+        height: 118px;
+        width: 80%;
+        border-radius: 15px;
+        @include text(36px, normal, 54px);
+        margin-left: 12px;
+    }
+    
+}
+
+//skills
+
+.skills{
+
+    margin-bottom: 250px;
+
+    &__item{
+        margin: 0;
+        padding: 45px;
+        background-color: #F5F5F5;
+    }
+
+    &__subtitle{
+        color: $color-st;
+        @include text(30px,600, 60px);
+    }
+
+    &__text{
+        @include text(16px, normal, 24px);
+    }
+
+    &__btn{
+        width: 230px;
+        height: 60px;
+        @include text(18px, 500, 27px);
+    }
+
+    .img__special{
+        height: 180px;
+        width: auto;
+    }
+
+    .item__special{
+        padding: 20px 45px !important;
+    }
+
+    .item__left{
+        padding-bottom: 95px !important;
+    }
+   
+}
+
+//about-us
+
+.about-us{
+
+    margin-bottom: 230px;
+
+    .text-400{
+        font-weight: 400;
+    }
+
+    &__number{
+        color: $color-st;
+        @include text(48px, 600, 50px)
+    }
+}
+
+//pricing
+
+.pricing{
+
+    margin-bottom: 260px;
+    &__img{
+        width: 80%;
+        height: 15vw;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__name{
+        color: $color-st;
+        @include text(30px, 600, 48px);
+    }
+
+    &__btn{
+        width: 240px;
+        background-color: #eee;
+        border: 0;
+        color: #546269;
+        @include text(18px, normal, 27px);
+
+        span{
+            color: $color-st;
+            @include text(30px, normal, 45px)
+        }
+
+        &:hover{
+            span{
+                color: #fff;
+            }
+        }
+    }
+
+    .card{
+        border: 0;
+    }
+
+    .card-body{
+        padding-bottom: 60px;
+    }
+}
+
+//contact
+
+.contact{
+    margin-bottom: 130px;
+    &__email{
+        width: 60%;
+        height: 80px;
+        border-radius: 10px;
+        padding: 25px 33px;
+        border: 1px solid $color-text;
+        &::placeholder{
+            color: $color-text;
+            @include text(16px, normal, 24px);
+        }
+
+        &:focus{
+            outline: none !important;
+            box-shadow: none !important;
+            border: 1px solid $color-text;
+        }
+    }
+
+    &__btn{
+        width: 36%;
+        border-radius: 10px;
+        @include text(20px, 500, 30px)
+    }
+}
+
+//footer
+
+.footer{
+    &__line{
+        height: 1px;
+        width: 100%;
+        background-color: $color-text;
+    }
+
+
+    &__copyright{
+        color: $color-text;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-text;
+
+        &:hover{
+            color: $color-st;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    body{
+        @include text(16px, normal, 24px)
+    }
+    .title{
+        @include text(36px, 600, 80px);
+        margin-bottom: 50px;
+    }
+
+    .brand{
+        @include text(30px, normal, 45px)
+    }
+
+    .navbar{
+        .btn{
+            width: 160px;
+            height: 50px;
+            @include text(18px, normal, 27px)
+        }
+
+        &__link{
+            @include text(16px, 500, 24px)
+        }
+    }
+    .header{
+        &__title{
+            @include text(48px, 600, 64px);
+        }
+
+        &__text{
+            @include text(20px, normal, 30px);
+        }
+
+        &__btn{
+            width: 60%;
+            height: 80px;
+            @include text(24px, normal, 36px)
+        }
+
+        &__content{
+            margin-bottom: 70px;
+            margin-top: 90px;
+        }
+    }
+
+    .skills{
+        margin-bottom: 105px;
+        &__subtitle{
+            @include text(22px, 600, 60px);
+        }
+        &__text{
+            @include text(14px, normal, 21px)
+        }
+        &__btn{
+            width: 196px;
+            @include text(18px, 500, 27px)
+        }
+        .img__special{
+            height: 140px;
+            width: auto;
+        }
+    }
+
+    .about-us{
+        margin-bottom: 125px;
+        &__number{
+            @include text(30px,600,40px)
+        }
+    }
+
+    .pricing{
+        margin-bottom: 140px;
+
+        &__name{
+            @include text(22px, 600, 34px);
+        }
+        &__btn{
+            padding: 0 30px;
+            @include text(16px, normal, 24px);
+
+            span{
+                @include text(24px, normal, 36px)
+            }
+        }
+    }
+
+    .contact{
+        margin-bottom: 150px;
+        &__email{
+            height: 60px;
+        }
+        &__btn{
+            @include text(16px, 500, 24px)
+        }
+    }
+
+    .footer{
+        &__copyright{
+            @include text(16px, normal, 24px)
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    body{
+        @include text(14px, normal, 21px)
+    }
+    .title{
+        @include text(30px, 600, 80px);
+        margin-bottom: 35px;
+    }
+    .navbar{
+        .nav-item+.nav-item{
+            margin-left: 20px;
+        }
+        .nav-link{
+            @include text(16px, 500, 24px);
+        }
+    }
+
+    .header{
+        &__title{
+            @include text(36px, 600, 45px);
+        }
+        &__text{
+            @include text(20px, normal, 30px)
+        }
+        &__btn{
+            width: 60%;
+            height: 65px;
+            @include text(18px, normal, 27px)
+        }
+        
+    }
+
+    .skills{
+        &__item{
+            padding: 25px;
+        }
+        &__text{
+            @include text(13px, normal, 20px) 
+        }
+        &__btn{
+            width: 180px;
+            height: 50px;
+            @include text(16px, 500, 24px);
+        }
+        .item__left{
+            padding-bottom: 75px !important;
+        }
+    }
+
+    .about-us{
+        &__number{
+            @include text(22px, 600, 25px);
+        }
+    }
+
+    .pricing{
+        &__name{
+            @include text(20px, 500, 28px);
+        }
+        &__btn{
+            padding: 10px;
+            width: 210px;
+            @include text(16px, 400, 24px);
+
+            span{
+                @include text(22px, 400, 33px);
+            }
+        }
+    }
+
+    .contact{
+        margin-bottom: 150px;
+        &__email{
+            height: 50px;
+
+            &::placeholder{
+                @include text(12px, normal, 18px)
+            }
+        }
+        &__btn{
+            @include text(13px, 500, 20px)
+        }
+    }
+
+    .footer{
+        &__copyright{
+            @include text(13px, normal, 20px)
+        }
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    body.show{
+        overflow: hidden;
+    }
+
+    .navbar-toggler{
+        border: 0 !important;
+        outline: none !important;
+        box-shadow: none !important; 
+
+        &[aria-expanded="true"]{
+            .navbar-toggler-icon {
+                background-image: url("../images/close.svg") 
+            }
+        }
+
+         &[aria-expanded="false"]{
+            .navbar-toggler-icon {
+                background-image: url("../images/menu.svg") 
+            }
+        }
+    }
+
+    .navbar{
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        padding-top: 20px !important;
+        background-color: #fff;
+        
+        .collapse{
+            height: 90vh;
+
+            &.show ~ body{
+                overflow: hidden;
+            }
+        }
+
+        &-nav{
+            margin-top: 30px;
+        }
+        .nav-item{
+            margin: 0 0 15px !important;
+        }
+
+        .nav-link{
+            @include text(22px, 600, 26px);
+        }
+
+        .btn{
+            width: 50%;
+        }
+        
+    }
+    
+
+
+    .header{
+        position: relative;
+        &__content{
+            padding-top: 50px;
+            margin-top: 0;
+        }
+    }
+
+    .skills{
+        .img__special{
+            width: 50%;
+            height: auto;
+        }
+
+        &__img{
+            width: 50%;
+            height: auto;
+        }
+
+        .item__special{
+            padding: 25px !important;
+        }
+    }
+
+    .pricing{
+        &__img{
+            width: 40%;
+            height: auto;
+        }
+        &__btn{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    body{
+        @include text(13px, normal, 20px);
+    }
+
+    .title{
+        @include text(30px, 600, 34px)
+    }
+
+    .brand{
+        @include text(24px, normal, 36px);
+    }
+
+    .header{
+        &__title{
+            @include text(24px, 600, 36px);
+            margin-bottom: 30px;
+        }
+
+        &__text{
+            @include text(14px, normal, 21px);
+            margin-bottom:40px;
+        }
+
+        &__btn{
+            width: 80%;
+            @include text(16px, normal, 24px)
+        }
+    }
+
+    .skills{
+        &__img{
+            width: 80% !important;
+        }
+
+        &__subtitle{
+            @include text(18px, 600, 50px)
+        }
+        &__text{
+            @include text(12px, normal, 18px)
+        }
+        &__btn{
+            @include text(14px, 500, 21px)
+        }
+    }
+
+    .about-us{
+        &__number{
+            @include text(24px, 600, 30px)
+        }
+    }
+
+    .pricing{
+        &__btn{
+            width: 170px;
+            @include text(14px, normal, 21px);
+
+            span{
+                @include text(18px, normal, 27px)
+            }
+        }
+    }
+    .contact{
+        &__img{
+            width: 80%;
+            margin-top: 30px;
+        }
+        &__form{
+            display: block !important;
+        }
+        &__email{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__btn{
+            display: block;
+            width: 80%;
+            height: 60px;
+            margin: 0 auto;
+            margin-top: 17px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .navbar{
+        .btn{
+            width: 80%;
+        }
+    }
+    .pricing{
+        &__img{
+            width: 80%;
+        }
+        &__name{
+           @include text(18px, 600, 28px)
+        }
+        &__text{
+            @include text(13px, normal, 20px)
+        }
+    }
+
+    .about-us{
+        &__data{
+            display: block;
+
+            div{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .footer__link{
+        @include text(11px, 500, 16px)
+    }
+}
+
+
+
+
+
+
+
+
